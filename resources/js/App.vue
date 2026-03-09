@@ -59,7 +59,7 @@
                         </div>
                     </div>
 
-                    <!-- Transfer Component (Optional Implementation) -->
+                    <!-- Transfer Component -->
                     <div class="bg-white p-6 rounded shadow-md">
                         <h2 class="text-xl font-bold mb-4">Inter-store Transfer</h2>
                         <p class="text-sm text-gray-500 mb-4">Moves stock between internal locations.</p>
