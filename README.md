@@ -1,4 +1,4 @@
-# KK Wholesalers - Production-Grade Inventory Movement System
+# KK Wholesalers - Inventory Movement System
 
 A high-integrity inventory management system built with **Laravel 12** and **Vue 3**. Designed to solve stock inconsistencies, race conditions, and audit challenges in a distributed retail environment.
 
@@ -21,7 +21,7 @@ The solution models the business structure (Branches -> Stores) and restricts ac
 - **Admin:** Global access to all branches and stores.
 - **Branch Manager:** Restricted to stores within their assigned branch.
 - **Store Manager:** Restricted to their specific assigned store.
-- **Extensibility:** Built using PHP Enums and Policies, making it easy to add granular permissions (e.g., `permission:view-audit`) in the future.
+- **Extensibility:** Built using PHP Enums and Policies, making it easy to add granular permissions in the future.
 
 ### 4. Scalability
 - **Database:** Optimized with indexes on `sku` and foreign keys.
@@ -30,11 +30,11 @@ The solution models the business structure (Branches -> Stores) and restricts ac
 ---
 
 ## Features Implemented
-- [x] **Inventory Management:** Centralized product tracking across multiple stores.
-- [x] **Sales & Adjustments:** Atomic stock reductions and manual corrections.
-- [x] **Inter-Store Transfers:** Secure movement of stock between locations with dual-entry audit logs.
-- [x] **Procurement:** System seeding and stock intake.
-- [x] **Real-time Dashboard:** Vue 3 interface for viewing balances and audit history.
+- **Inventory Management:** Centralized product tracking across multiple stores.
+- **Sales & Adjustments:** Atomic stock reductions and manual corrections.
+- **Inter-Store Transfers:** Secure movement of stock between locations with dual-entry audit logs.
+- **Procurement:** System seeding and stock intake.
+- **Real-time Dashboard:** Vue 3 interface for viewing balances and audit history.
 
 ---
 
@@ -57,7 +57,7 @@ The solution models the business structure (Branches -> Stores) and restricts ac
 ### Installation
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/paullaster/inventory-service
    cd inventory-service
    ```
 
@@ -82,7 +82,6 @@ The system provides two ways to populate data:
   ```
 - **Factory Mode:** Generates large-scale random datasets using model factories for stress testing.
   ```bash
-  # Individual seeders are now fully populated with Faker data
   php artisan db:seed --class=ProductSeeder
   php artisan db:seed --class=StockMovementSeeder
   ```
